@@ -1,13 +1,21 @@
+@mobile: ~"(max-width: 500px)";
+
 html {
     font-size: 62.5%;
     font-family: 'Poppins', sans-serif;
     color: white;
-    background: #6d58c6;
+    background: linear-gradient(146.5deg, #230A11 -1.96%, #5D0D5F 97.8%);
 }
 
 body {
     margin: 0%;
 }
+
+.h1-container {
+    display: flex;
+    justify-content: center;
+}
+
 h1 {
     text-align: center;
     font-size: 6.5rem;
@@ -19,7 +27,7 @@ h3 {
 
 p {
     font-size: 1.7rem;
-}
+} 
 
 .top container {
     display: flex;
@@ -29,6 +37,7 @@ p {
     h2 {
         font-size: 3.7rem;
         margin-bottom: 0%;
+        text-align: center;
     }
 
     h3 {
@@ -54,12 +63,16 @@ p {
     justify-content: center;
     width: 100%;
     height: auto;
-    margin-bottom: 3%;
+    margin-bottom: 2%;
 
     img {
         width: 45%;
         height: auto;
         margin-bottom: 2%;
+
+        @media @mobile {
+            width: 80%;
+        }
     }
 }
 
@@ -68,12 +81,18 @@ p {
     background: white;
     display: flex;
     justify-content: center;
+    padding-top: 2.5%;
 
      container {
         display: flex;
         justify-content: center;
         width: 59%;
         color: #6d58c6;
+
+        @media @mobile {
+            flex-direction: column;
+            width: 95%;
+        }
 
         .photos-container {
             display: flex;
@@ -82,10 +101,15 @@ p {
             padding-left: 2%;
             padding-right: 2%;
 
+            @media @mobile {
+                border-bottom: 1px dashed #f977A1;
+                padding-bottom: 2%;
+            }
+
             .far.fa-image {
                 font-size: 3rem;
                 padding-top: 6%;
-                color: #3A3841;
+                color: lighten(#3A3841, 20%);
             } // closes .far.fa-image
 
             h3 {
@@ -100,11 +124,17 @@ p {
             padding-left: 2%;
             padding-right: 2%;
 
+            @media @mobile {
+                border-top: 1px dashed #f977A1;
+                border-bottom: 1px dashed #f977A1;
+                padding-bottom: 2%;
+            }
+
 
             .fas.fa-video {
                 font-size: 3rem;
                 padding-top: 6%;
-                color: #3A3841;
+                color: lighten(#3A3841, 20%);
             } // closes .fas.fa-video
 
             h3 {
@@ -119,11 +149,15 @@ p {
             padding-left: 2%;
             padding-right: 2%;
 
+            @media @mobile {
+                border-top: 1px dashed #f977A1;
+            }
+
 
             .fas.fa-user-friends {
                 font-size: 3rem;
                 padding-top: 6%;
-                color: #3A3841;
+                color: lighten(#3A3841, 20%);
             } // closes .fas.fa-user-friends
 
             h3 {
@@ -132,3 +166,8 @@ p {
         } // closes .connect-container
     } // closes container
 } // closes .bottom
+
+.logo-font {
+    font-family: 'Montserrat', sans-serif;
+    margin-right: 1%;
+}

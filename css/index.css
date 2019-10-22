@@ -2,10 +2,14 @@ html {
   font-size: 62.5%;
   font-family: 'Poppins', sans-serif;
   color: white;
-  background: #6d58c6;
+  background: linear-gradient(146.5deg, #230A11 -1.96%, #5D0D5F 97.8%);
 }
 body {
   margin: 0%;
+}
+.h1-container {
+  display: flex;
+  justify-content: center;
 }
 h1 {
   text-align: center;
@@ -25,6 +29,7 @@ p {
 .top container h2 {
   font-size: 3.7rem;
   margin-bottom: 0%;
+  text-align: center;
 }
 .top container h3 {
   font-size: 2.7rem;
@@ -45,24 +50,36 @@ p {
   justify-content: center;
   width: 100%;
   height: auto;
-  margin-bottom: 3%;
+  margin-bottom: 2%;
 }
 .middle img {
   width: 45%;
   height: auto;
   margin-bottom: 2%;
 }
+@media (max-width: 500px) {
+  .middle img {
+    width: 80%;
+  }
+}
 .bottom {
   width: 100%;
   background: white;
   display: flex;
   justify-content: center;
+  padding-top: 2.5%;
 }
 .bottom container {
   display: flex;
   justify-content: center;
   width: 59%;
   color: #6d58c6;
+}
+@media (max-width: 500px) {
+  .bottom container {
+    flex-direction: column;
+    width: 95%;
+  }
 }
 .bottom container .photos-container {
   display: flex;
@@ -71,10 +88,16 @@ p {
   padding-left: 2%;
   padding-right: 2%;
 }
+@media (max-width: 500px) {
+  .bottom container .photos-container {
+    border-bottom: 1px dashed #f977A1;
+    padding-bottom: 2%;
+  }
+}
 .bottom container .photos-container .far.fa-image {
   font-size: 3rem;
   padding-top: 6%;
-  color: #3A3841;
+  color: #6b6778;
 }
 .bottom container .photos-container h3 {
   margin-bottom: 0%;
@@ -86,10 +109,17 @@ p {
   padding-left: 2%;
   padding-right: 2%;
 }
+@media (max-width: 500px) {
+  .bottom container .stories-container {
+    border-top: 1px dashed #f977A1;
+    border-bottom: 1px dashed #f977A1;
+    padding-bottom: 2%;
+  }
+}
 .bottom container .stories-container .fas.fa-video {
   font-size: 3rem;
   padding-top: 6%;
-  color: #3A3841;
+  color: #6b6778;
 }
 .bottom container .stories-container h3 {
   margin-bottom: 0%;
@@ -101,11 +131,20 @@ p {
   padding-left: 2%;
   padding-right: 2%;
 }
+@media (max-width: 500px) {
+  .bottom container .connect-container {
+    border-top: 1px dashed #f977A1;
+  }
+}
 .bottom container .connect-container .fas.fa-user-friends {
   font-size: 3rem;
   padding-top: 6%;
-  color: #3A3841;
+  color: #6b6778;
 }
 .bottom container .connect-container h3 {
   margin-bottom: 0%;
+}
+.logo-font {
+  font-family: 'Montserrat', sans-serif;
+  margin-right: 1%;
 }
