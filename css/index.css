@@ -217,3 +217,143 @@ p {
     margin-right: 2.5%;
   }
 }
+.team {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.miguel {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10%;
+}
+.miguel img {
+  width: 40%;
+  height: auto;
+  margin-right: 4%;
+}
+.miguel .miguel-text {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+.miguel .miguel-text h3 {
+  margin-bottom: 0%;
+  padding-bottom: 0%;
+}
+.ashes {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10%;
+}
+.ashes .ashes-text {
+  display: flex;
+  flex-direction: column;
+  margin-right: 4%;
+  width: 40%;
+}
+.ashes .ashes-text h3 {
+  margin-bottom: 0%;
+  padding-bottom: 0%;
+}
+.ashes img {
+  width: 40%;
+  height: auto;
+}
+.rocky {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10%;
+}
+.rocky img {
+  width: 40%;
+  height: auto;
+  margin-right: 4%;
+}
+.rocky .rocky-text {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+.rocky .rocky-text h3 {
+  margin-bottom: 0%;
+  padding-bottom: 0%;
+}
+.deandre {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10%;
+}
+.deandre .deandre-text {
+  display: flex;
+  flex-direction: column;
+  margin-right: 4%;
+  width: 43%;
+}
+.deandre .deandre-text h3 {
+  margin-bottom: 0%;
+  padding-bottom: 0%;
+}
+.deandre img {
+  width: 44%;
+  height: auto;
+}
+.emily {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10%;
+}
+.emily img {
+  width: 52%;
+  height: auto;
+  margin-right: 4%;
+}
+.emily .emily-text {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+.emily .emily-text h3 {
+  margin-bottom: 0%;
+  padding-bottom: 0%;
+}
+.carlos {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10%;
+}
+.carlos .carlos-text {
+  display: flex;
+  flex-direction: column;
+  margin-right: 4%;
+  width: 43%;
+}
+.carlos .carlos-text h3 {
+  margin-bottom: 0%;
+  padding-bottom: 0%;
+}
+.carlos img {
+  width: 44%;
+  height: auto;
+}
+.jevon {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10%;
+}
+.jevon img {
+  width: 52%;
+  height: auto;
+  margin-right: 4%;
+}
+.jevon .jevon-text {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+.jevon .jevon-text h3 {
+  margin-bottom: 0%;
+  padding-bottom: 0%;
+}
