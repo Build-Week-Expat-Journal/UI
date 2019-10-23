@@ -7,6 +7,37 @@ html {
 body {
   margin: 0%;
 }
+nav {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2%;
+}
+@media (max-width: 800px) {
+  nav {
+    justify-content: space-evenly;
+  }
+}
+@media (max-width: 500px) {
+  nav {
+    justify-content: space-evenly;
+  }
+}
+nav a {
+  color: white;
+  font-size: 1.7rem;
+  text-decoration: none;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+nav a:hover {
+  font-size: 1.9rem;
+  font-weight: bold;
+}
+@media (max-width: 500px) {
+  nav a:hover {
+    font-size: 1.7rem;
+  }
+}
 .h1-container {
   display: flex;
   justify-content: center;
@@ -45,6 +76,9 @@ p {
   font-size: 1.7rem;
   color: #f977A1;
 }
+.top container button a:hover {
+  color: #6d58c6;
+}
 .middle {
   display: flex;
   justify-content: center;
@@ -56,6 +90,11 @@ p {
   width: 45%;
   height: auto;
   margin-bottom: 2%;
+}
+@media (max-width: 800px) {
+  .middle img {
+    width: 65%;
+  }
 }
 @media (max-width: 500px) {
   .middle img {
@@ -71,9 +110,16 @@ p {
 }
 .bottom container {
   display: flex;
-  justify-content: center;
-  width: 59%;
+  justify-content: space-evenly;
+  width: 65%;
   color: #6d58c6;
+}
+@media (max-width: 800px) {
+  .bottom container {
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+  }
 }
 @media (max-width: 500px) {
   .bottom container {
@@ -87,6 +133,11 @@ p {
   align-items: center;
   padding-left: 2%;
   padding-right: 2%;
+}
+@media (max-width: 800px) {
+  .bottom container .photos-container {
+    padding-bottom: 2%;
+  }
 }
 @media (max-width: 500px) {
   .bottom container .photos-container {
@@ -108,11 +159,24 @@ p {
   align-items: center;
   padding-left: 2%;
   padding-right: 2%;
+  border-left: 1px dashed #f977A1;
+  border-right: 1px dashed #f977A1;
+}
+@media (max-width: 800px) {
+  .bottom container .stories-container {
+    border-top: 1px dashed #f977A1;
+    border-bottom: 1px dashed #f977A1;
+    border-left: 0px;
+    border-right: 0px;
+    padding-bottom: 2%;
+  }
 }
 @media (max-width: 500px) {
   .bottom container .stories-container {
     border-top: 1px dashed #f977A1;
     border-bottom: 1px dashed #f977A1;
+    border-left: 0px;
+    border-right: 0px;
     padding-bottom: 2%;
   }
 }
@@ -147,4 +211,9 @@ p {
 .logo-font {
   font-family: 'Montserrat', sans-serif;
   margin-right: 1%;
+}
+@media (max-width: 500px) {
+  .logo-font {
+    margin-right: 2.5%;
+  }
 }

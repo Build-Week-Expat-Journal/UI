@@ -1,4 +1,5 @@
 @mobile: ~"(max-width: 500px)";
+@tablet: ~"(max-width: 800px)";
 
 html {
     font-size: 62.5%;
@@ -9,6 +10,37 @@ html {
 
 body {
     margin: 0%;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2%;
+
+    @media @tablet {
+        justify-content: space-evenly;
+    }
+
+    @media @mobile {
+        justify-content: space-evenly;
+    }
+
+    a {
+        color: white;
+        font-size: 1.7rem;
+        text-decoration: none;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    a:hover {
+        font-size: 1.9rem;
+        font-weight: bold;
+
+        @media @mobile {
+            font-size: 1.7rem;
+        }
+    }
 }
 
 .h1-container {
@@ -55,6 +87,10 @@ p {
             font-size: 1.7rem;
             color: #f977A1;
         }
+
+        a:hover {
+            color: #6d58c6;
+        }
     }
 }
 
@@ -69,6 +105,10 @@ p {
         width: 45%;
         height: auto;
         margin-bottom: 2%;
+
+        @media @tablet {
+            width: 65%;
+        }
 
         @media @mobile {
             width: 80%;
@@ -85,9 +125,15 @@ p {
 
      container {
         display: flex;
-        justify-content: center;
-        width: 59%;
+        justify-content: space-evenly;
+        width: 65%;
         color: #6d58c6;
+
+        @media @tablet {
+            flex-direction: column;
+            align-items: center;
+            width: 80%;
+        }
 
         @media @mobile {
             flex-direction: column;
@@ -100,6 +146,10 @@ p {
             align-items: center;
             padding-left: 2%;
             padding-right: 2%;
+
+            @media @tablet {
+                padding-bottom: 2%;
+            }
 
             @media @mobile {
                 border-bottom: 1px dashed #f977A1;
@@ -123,10 +173,22 @@ p {
             align-items: center;
             padding-left: 2%;
             padding-right: 2%;
+            border-left: 1px dashed #f977A1;
+            border-right: 1px dashed #f977A1;
+
+            @media @tablet {
+                border-top: 1px dashed #f977A1;
+                border-bottom: 1px dashed #f977A1;
+                border-left: 0px;
+                border-right: 0px;
+                padding-bottom: 2%;
+            }
 
             @media @mobile {
                 border-top: 1px dashed #f977A1;
                 border-bottom: 1px dashed #f977A1;
+                border-left: 0px;
+                border-right: 0px;
                 padding-bottom: 2%;
             }
 
@@ -170,4 +232,8 @@ p {
 .logo-font {
     font-family: 'Montserrat', sans-serif;
     margin-right: 1%;
+
+    @media @mobile {
+        margin-right: 2.5%;
+    }
 }
