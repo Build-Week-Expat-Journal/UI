@@ -10,7 +10,7 @@ body {
 nav {
   display: flex;
   justify-content: flex-end;
-  margin-top: 2%;
+  background: white;
 }
 @media (max-width: 800px) {
   nav {
@@ -23,11 +23,13 @@ nav {
   }
 }
 nav a {
-  color: white;
+  color: #5D0D5F;
   font-size: 1.7rem;
   text-decoration: none;
   padding-left: 2%;
+  padding-top: 2%;
   padding-right: 2%;
+  padding-bottom: 1%;
 }
 nav a:hover {
   font-size: 1.9rem;
@@ -48,6 +50,11 @@ h1 {
 }
 h3 {
   font-size: 2.7rem;
+}
+@media (max-width: 500px) {
+  h3 {
+    font-size: 2rem;
+  }
 }
 p {
   font-size: 1.7rem;
@@ -224,20 +231,45 @@ p {
   margin-left: auto;
   margin-right: auto;
 }
+@media (max-width: 500px) {
+  .team {
+    width: 95%;
+  }
+}
 .miguel {
   display: flex;
   justify-content: flex-start;
   margin-bottom: 10%;
 }
+@media (max-width: 500px) {
+  .miguel {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
 .miguel img {
-  width: 40%;
+  width: 50%;
   height: auto;
   margin-right: 4%;
+}
+@media (max-width: 500px) {
+  .miguel img {
+    width: 100%;
+    margin-right: 0%;
+  }
 }
 .miguel .miguel-text {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   width: 40%;
+  margin-bottom: 2%;
+}
+@media (max-width: 500px) {
+  .miguel .miguel-text {
+    width: 100%;
+    text-align: center;
+  }
 }
 .miguel .miguel-text h3 {
   margin-bottom: 0%;
@@ -248,11 +280,25 @@ p {
   justify-content: flex-end;
   margin-bottom: 10%;
 }
+@media (max-width: 500px) {
+  .ashes {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .ashes .ashes-text {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   margin-right: 4%;
   width: 40%;
+  margin-bottom: 2%;
+}
+@media (max-width: 500px) {
+  .ashes .ashes-text {
+    width: 100%;
+    text-align: center;
+  }
 }
 .ashes .ashes-text h3 {
   margin-bottom: 0%;
@@ -262,20 +308,46 @@ p {
   width: 40%;
   height: auto;
 }
+@media (max-width: 500px) {
+  .ashes img {
+    width: 100%;
+    margin-right: 0%;
+  }
+}
 .rocky {
   display: flex;
   justify-content: flex-start;
   margin-bottom: 10%;
+}
+@media (max-width: 500px) {
+  .rocky {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 }
 .rocky img {
   width: 40%;
   height: auto;
   margin-right: 4%;
 }
+@media (max-width: 500px) {
+  .rocky img {
+    width: 100%;
+    margin-right: 0%;
+  }
+}
 .rocky .rocky-text {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   width: 40%;
+  margin-bottom: 2%;
+}
+@media (max-width: 500px) {
+  .rocky .rocky-text {
+    width: 100%;
+    text-align: center;
+  }
 }
 .rocky .rocky-text h3 {
   margin-bottom: 0%;
@@ -286,11 +358,25 @@ p {
   justify-content: flex-end;
   margin-bottom: 10%;
 }
+@media (max-width: 500px) {
+  .deandre {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .deandre .deandre-text {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   margin-right: 4%;
   width: 43%;
+  margin-bottom: 2%;
+}
+@media (max-width: 500px) {
+  .deandre .deandre-text {
+    width: 100%;
+    text-align: center;
+  }
 }
 .deandre .deandre-text h3 {
   margin-bottom: 0%;
@@ -300,20 +386,46 @@ p {
   width: 44%;
   height: auto;
 }
+@media (max-width: 500px) {
+  .deandre img {
+    width: 100%;
+    margin-right: 0%;
+  }
+}
 .emily {
   display: flex;
   justify-content: flex-start;
   margin-bottom: 10%;
+}
+@media (max-width: 500px) {
+  .emily {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 }
 .emily img {
   width: 52%;
   height: auto;
   margin-right: 4%;
 }
+@media (max-width: 500px) {
+  .emily img {
+    width: 100%;
+    margin-right: 0%;
+  }
+}
 .emily .emily-text {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   width: 40%;
+  margin-bottom: 2%;
+}
+@media (max-width: 500px) {
+  .emily .emily-text {
+    width: 100%;
+    text-align: center;
+  }
 }
 .emily .emily-text h3 {
   margin-bottom: 0%;
@@ -324,36 +436,85 @@ p {
   justify-content: flex-end;
   margin-bottom: 10%;
 }
+@media (max-width: 500px) {
+  .carlos {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .carlos .carlos-text {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   margin-right: 4%;
   width: 43%;
+  margin-bottom: 2%;
+}
+@media (max-width: 500px) {
+  .carlos .carlos-text {
+    width: 100%;
+    text-align: center;
+  }
 }
 .carlos .carlos-text h3 {
   margin-bottom: 0%;
   padding-bottom: 0%;
 }
 .carlos img {
-  width: 44%;
+  width: 30%;
   height: auto;
+}
+@media (max-width: 500px) {
+  .carlos img {
+    width: 100%;
+    margin-right: 0%;
+  }
 }
 .jevon {
   display: flex;
   justify-content: flex-start;
   margin-bottom: 10%;
 }
+@media (max-width: 500px) {
+  .jevon {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
 .jevon img {
-  width: 52%;
-  height: auto;
+  width: 63%;
+  height: 90%;
   margin-right: 4%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+@media (max-width: 500px) {
+  .jevon img {
+    width: 100%;
+    margin-right: 0%;
+  }
 }
 .jevon .jevon-text {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   width: 40%;
+  margin-bottom: 2%;
+}
+@media (max-width: 500px) {
+  .jevon .jevon-text {
+    width: 100%;
+    text-align: center;
+  }
 }
 .jevon .jevon-text h3 {
   margin-bottom: 0%;
   padding-bottom: 0%;
+}
+.footer {
+  background: #3A3841;
+  justify-content: center;
+}
+.footer a {
+  color: white;
 }
